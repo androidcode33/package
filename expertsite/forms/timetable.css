@@ -1,0 +1,3472 @@
+﻿@charset "UTF-8";
+
+/* CSS Stylesheet of SEM-CIT-TT-ver1.fet
+   Stylesheet generated with FET 5.18.0 on 8/19/12 8:10 AM */
+
+/* To do a page-break only after every second timetable, delete "page-break-before: always;" in "table.even_table". */
+/* To hide an element just write the following phrase into the element: "display:none;" (without quotes). */
+
+p.back {
+  margin-top: 4ex;
+  margin-bottom: 5ex;
+  
+  display: none;
+}
+
+table {
+  text-align: center;
+  font-family: georgia, serif;
+  font-size: 13px;
+}
+
+table.odd_table {
+  page-break-before: always;
+}
+
+table.even_table {
+  page-break-before: always;
+}
+
+table.detailed {
+  margin-left:auto; margin-right:auto;
+  text-align: center;
+  border: 0px;
+  border-spacing: 0;
+  border-collapse: collapse;
+
+}
+
+/*======================Header CSS=========================*/
+nav ul{margin:0; padding:0; list-style:none;}
+
+/* ----------------------------------------------Top Navigation-------------------------------------*/
+
+header nav{display:block; width:70%; text-align:center; margin:auto; padding:20px 0; border-top:1px solid #D8D8D8; border-bottom:1px solid #D8D8D8; clear:both;}
+header nav ul, header nav li{margin:0; padding:0; list-style:none;  }
+header nav li{display:inline-block; margin-right:40px;font-style: normal;}
+header nav li li{margin-left:0;}
+header nav li a:link, header nav li a:visited, header nav li a:hover{display:block; margin:0; padding:0; color:#666666; background-color:#FFFFFF; text-transform:uppercase; font-size:16px; font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;}
+header nav li a:hover, header nav li.active a{color:#FF9900; background-color:#FFFFFF;}
+header nav li li a:link, header nav li li a:visited{width:150px; float:none; margin:0; padding:7px 10px; text-transform:none; font-weight:normal; color:#666666; background-color:#F9F9F9; border:none;}
+header nav li li a:hover{color:#FF9900; background-color:#F9F9F9;}
+header nav li:hover ul{left:auto;}
+header nav li:hover{position:static;}
+header nav li.last{margin-right:0;}
+
+/* ============================================= Header Image =====================================*/
+header img{ display: block; margin-top: 60px; margin-bottom:10px; margin-left: auto; margin-right: auto; }
+
+/*======================End Header CSS=======================*/
+
+
+/*===================Table Menu Sha==================*/
+#menu-table
+{
+ /* font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 12px;*/
+  margin: 45px;
+  width: 580px;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid #69c;
+}
+#menu-table th
+{
+  padding: 12px 10px 12px 10px;
+  font-weight: normal;
+  font-size: 14px;
+  /*color: #039;*/
+  color: green;
+  border-bottom: 1px dashed #69c;
+}
+#menu-table td
+{
+  padding: 4px 10px 4px 10px;
+  color: #669;
+  font-family: 15px;
+}
+/*#menu-table a
+{
+  font-family: 19px;
+}*/
+#menu-table tbody tr:hover td
+{
+  /*color: #339;*/
+  color: green;
+  background: #d0dafd;
+}
+#menu-table {
+  border: 1px solid #69c;
+}
+/*===================End Table Menue Sha=============*/
+
+caption {
+
+}
+
+thead {
+
+}
+
+/* Some programs import "tfoot" incorrectly. So we use "tr.foot" instead of "tfoot". */
+
+tr.foot {
+display: none;
+}
+
+body.top {
+  font-family: georgia, serif;
+}
+
+ul {
+  font-family: georgia, serif;
+  font-size: 13px;
+}
+
+li {
+  font-family: georgia, serif;
+  font-size: 13px;
+}
+
+.downloads {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  /*font-style: italic;*/
+}
+
+.downloads li{
+  font-size: 14px;
+}
+
+
+tbody {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+td.detailed {
+  border: 1px dashed silver;
+  border-bottom: 0;
+  border-top: 0;
+}
+
+th.xAxis {
+/* width: 8em; */
+}
+
+th.yAxis {
+  height: 8ex;
+}
+
+span.s_1 { /* subject BIS 1100 Foundations of IS */
+
+}
+
+span.s_2 { /* subject BIS 1101 Communication for IS Managers */
+
+}
+
+span.s_3 { /* subject BIS 1102 Business Statistics */
+
+}
+
+span.s_4 { /* subject BIS 1103 Systems Analysis and Design */
+
+}
+
+span.s_5 { /* subject BIS 2100 Information System Security */
+
+}
+
+span.s_6 { /* subject BIS 2101 Information System Development */
+
+}
+
+span.s_7 { /* subject BIS 2102 Information System Management */
+
+}
+
+span.s_8 { /* subject BIS 2103 Knowledge-based Systems */
+
+}
+
+span.s_9 { /* subject BIS 2104 Introduction to Database Systems */
+
+}
+
+span.s_10 { /* subject BIS 3100 Modeling and Simulation */
+
+}
+
+span.s_11 { /* subject BIS 3102 Human Computer Interaction */
+
+}
+
+span.s_12 { /* subject BIS 3103 Database Management Systems */
+
+}
+
+span.s_13 { /* subject BIS 3103 Database Management Systems - Retakers */
+
+}
+
+span.s_14 { /* subject BIT 1102 Communications Technology & the Internet */
+
+}
+
+span.s_15 { /* subject BIT 1104 Introduction to Information Technology   */
+
+}
+
+span.s_16 { /* subject BIT 2105 Electronic Media Systems & Multimedia */
+
+}
+
+span.s_17 { /* subject BIT 2107 Web Systems and Technologies I */
+
+}
+
+span.s_18 { /* subject BIT 2108 Information Technology II */
+
+}
+
+span.s_19 { /* subject BIT 2109 Integrative Programming and Technologies */
+
+}
+
+span.s_20 { /* subject BIT 2110 Electronic Commerce */
+
+}
+
+span.s_21 { /* subject BIT 3104 Business Communication & Report Writing */
+
+}
+
+span.s_22 { /* subject BIT 3105 Web Systems and Technologies II */
+
+}
+
+span.s_23 { /* subject BIT 3106 Software Engineering for Internet Applications */
+
+}
+
+span.s_24 { /* subject BIT 3107 IT Projects Management & Development */
+
+}
+
+span.s_25 { /* subject BSE 1105 Business Law */
+
+}
+
+span.s_26 { /* subject BSE 2102 Principles of Software Development II */
+
+}
+
+span.s_27 { /* subject BSE 2105 Formal Methods */
+
+}
+
+span.s_28 { /* subject BSE 3102 Object-oriented Software Engineering  */
+
+}
+
+span.s_29 { /* subject BSE 3103 Requirements Engineering  */
+
+}
+
+span.s_30 { /* subject BSE 3104 Software metrics  */
+
+}
+
+span.s_31 { /* subject BSE 3105 Software Evolution  */
+
+}
+
+span.s_32 { /* subject BSE 3106 Mobile Networks and Computing  */
+
+}
+
+span.s_33 { /* subject BSE 3107 Real-Time and Embedded Systems */
+
+}
+
+span.s_34 { /* subject BSE 4100 Software Engineering Project I */
+
+}
+
+span.s_35 { /* subject BSE 4101 Software Reliability and Testing */
+
+}
+
+span.s_36 { /* subject BSE 4102 Ethics of Professional Engineers */
+
+}
+
+span.s_37 { /* subject COE 2105 Entrepreneurship */
+
+}
+
+span.s_38 { /* subject CSC 1100 Computer Literacy */
+
+}
+
+span.s_39 { /* subject CSC 1104 Computer Organization & Architecture */
+
+}
+
+span.s_40 { /* subject CSC 1106 Programming Methodology I */
+
+}
+
+span.s_41 { /* subject CSC 2100 Data Structures and Algorithms */
+
+}
+
+span.s_42 { /* subject CSC 2113 Software Engineering */
+
+}
+
+span.s_43 { /* subject CSC 2113 Software Engineering - Retakers */
+
+}
+
+span.s_44 { /* subject CSC 2114 Artificial Intelligence */
+
+}
+
+span.s_45 { /* subject CSC 2115 Programming Methodology II */
+
+}
+
+span.s_46 { /* subject CSC 3103 User Interface Design */
+
+}
+
+span.s_47 { /* subject CSC 3105 Computer Graphics */
+
+}
+
+span.s_48 { /* subject CSC 3112 Principles of Programming Languages  */
+
+}
+
+span.s_49 { /* subject CSC 3113 Emerging trends in computer science  */
+
+}
+
+span.s_50 { /* subject CSC 3114 Selected Topics in CS */
+
+}
+
+span.s_51 { /* subject CSK 1101 Communication Skills */
+
+}
+
+span.s_52 { /* subject DCS 2103 Ethics in an IT Environment */
+
+}
+
+span.s_53 { /* subject MCN 7100 Computer Networks */
+
+}
+
+span.s_54 { /* subject MCN 7101 Principles of Mobile Computing */
+
+}
+
+span.s_55 { /* subject MCN 7102 Software Engineering */
+
+}
+
+span.s_56 { /* subject MCN 7103 System and Network Security */
+
+}
+
+span.s_57 { /* subject MCN 7104 Mobile Communications */
+
+}
+
+span.s_58 { /* subject MCN 7105 Structure and Interpretation of Computer Programs */
+
+}
+
+span.s_59 { /* subject MCN 7106 Mobile Software and Content Development  */
+
+}
+
+span.s_60 { /* subject MCN 7107 Communications Systems */
+
+}
+
+span.s_61 { /* subject MCN 7109 Requirements Engineering */
+
+}
+
+span.s_62 { /* subject MCN 8100 Advanced Network Security */
+
+}
+
+span.s_63 { /* subject MCN 8101 Innovative Mobile Services */
+
+}
+
+span.s_64 { /* subject MCN 8102 Telecommunications Policy and Standards */
+
+}
+
+span.s_65 { /* subject MCN 8103 Multimedia Communication Systems */
+
+}
+
+span.s_66 { /* subject MCN 8104 Networking Programming */
+
+}
+
+span.s_67 { /* subject MCN 8105 Applied Software Project Management */
+
+}
+
+span.s_68 { /* subject MCN 8106 Database Design */
+
+}
+
+span.s_69 { /* subject MCN 8107 Selected Topics in Networking */
+
+}
+
+span.s_70 { /* subject MCN 8108 Software Quality Assurance and Testing */
+
+}
+
+span.s_71 { /* subject MCS 7116 Graph Theory */
+
+}
+
+span.s_72 { /* subject MCS 7118 Advanced Programming */
+
+}
+
+span.s_73 { /* subject MCS 8100 Artificial Intelligence */
+
+}
+
+span.s_74 { /* subject MCS 8103 Operating Systems Theory and Design */
+
+}
+
+span.s_75 { /* subject MIS 7100 Systems Analysis and Design */
+
+}
+
+span.s_76 { /* subject MIS 7102 Modelling and Simulation */
+
+}
+
+span.s_77 { /* subject MIS 7110 Database Systems */
+
+}
+
+span.s_78 { /* subject MIS 7111 Information Systems for Managers */
+
+}
+
+span.s_79 { /* subject MIS 8108 Business Intelligence and Data Mining */
+
+}
+
+span.s_80 { /* subject MIS 8110 GIS and Remote Sensing  */
+
+}
+
+span.s_81 { /* subject MIS 8115 Information Systems Security  */
+
+}
+
+span.s_82 { /* subject MIS 8116 Enterprise Integration & Collaborative Comms. */
+
+}
+
+span.s_83 { /* subject MIS 8117 Business Process Modelling & Analysis */
+
+}
+
+span.s_84 { /* subject MIT 7100 Information Security */
+
+}
+
+span.s_85 { /* subject MIT 7115 Contemporary Issues in Information Technology */
+
+}
+
+span.s_86 { /* subject MIT 7116 Research Methodology */
+
+}
+
+span.s_87 { /* subject MIT 8104 Online Information Services */
+
+}
+
+span.s_88 { /* subject MIT 8110 Computer Security/ MIS 8115 Information Systems Security */
+
+}
+
+span.s_89 { /* subject MIT 8115 Corporate Network Management */
+
+}
+
+span.s_90 { /* subject MIT 8116 Multimedia and Emerging Technologies */
+
+}
+
+span.s_91 { /* subject MIT 8117 XML and Web Services */
+
+}
+
+span.s_92 { /* subject MIT 8118 Web based IS and Web Mining Technology */
+
+}
+
+span.s_93 { /* subject MTH 2106 Numerical Analysis I */
+
+}
+
+span.s_94 { /* subject MTH 3105 Discrete Mathematics */
+
+}
+
+span.s_95 { /* subject MTH 3107 Linear programming  */
+
+}
+
+span.s_96 { /* subject BLS 1106 Information Literacy */
+
+}
+
+span.s_97 { /* subject BLS 1111 Information Technology 1 */
+
+}
+
+span.s_98 { /* subject BLS 1105 Information and Society  */
+
+}
+
+span.s_99 { /* subject BLS 3120 Library Operations */
+
+}
+
+span.s_100 { /* subject BLS 2106 Reference and Information Service */
+
+}
+
+span.s_101 { /* subject BLS 2107 Editing  */
+
+}
+
+span.s_102 { /* subject BLS 2112 Document Cataloguing I  */
+
+}
+
+span.s_103 { /* subject BLS 2113 Document Classification I  */
+
+}
+
+span.s_104 { /* subject BLS 1213 Analysis of Information Systems */
+
+}
+
+span.s_105 { /* subject BLS 3113 Management of Information Institutions and Resources */
+
+}
+
+span.s_106 { /* subject BLS 3116 Preservation and Conservation */
+
+}
+
+span.s_107 { /* subject BLS 3122 Web Document  Management */
+
+}
+
+span.s_108 { /* subject BLS 3124 Multimedia Librarianship  */
+
+}
+
+span.s_109 { /* subject BLS 3124 Research Methods */
+
+}
+
+span.s_110 { /* subject BLS 3125 Automation of Library and Information Systems */
+
+}
+
+span.s_111 { /* subject DLS 1101 Libraries in their Social Setting */
+
+}
+
+span.s_112 { /* subject DLS 1102 Introduction to Cataloguing Theory & Practice */
+
+}
+
+span.s_113 { /* subject DLS 1104 Basic Accounts  */
+
+}
+
+span.s_114 { /* subject DLS 1103 Introduction to Classification Theory & Practice */
+
+}
+
+span.s_115 { /* subject DLS 2101 Introduction to Community Information Services */
+
+}
+
+span.s_116 { /* subject DLS 2102 Specialized Information Services  */
+
+}
+
+span.s_117 { /* subject DLS 2103 School Library Studies */
+
+}
+
+span.s_118 { /* subject DLS 2108 Stores and Material Management  */
+
+}
+
+span.s_119 { /* subject BRM 1101 Principles of Records and Archives Management */
+
+}
+
+span.s_120 { /* subject BRM 1102 Organisation and Office Systems */
+
+}
+
+span.s_121 { /* subject BRM 1103 Paleography and Oral History Management */
+
+}
+
+span.s_122 { /* subject BRM 1104 Supplies and Materials Management */
+
+}
+
+span.s_123 { /* subject BLS 1112 Communication Skills and Practice */
+
+}
+
+span.s_124 { /* subject BLS 2215 Database Management Systems */
+
+}
+
+span.s_125 { /* subject BRM 2101 Information and Documentation Services  */
+
+}
+
+span.s_126 { /* subject BRM 2102 Ethics in Records and Archives Management  */
+
+}
+
+span.s_127 { /* subject BRM 2103 Records Processing and Organization */
+
+}
+
+span.s_128 { /* subject BRM 2104 Desktop Publishing and Editing */
+
+}
+
+span.s_129 { /* subject BRM 2105 Research Methods */
+
+}
+
+span.s_130 { /* subject BLS 3121 Website Development and Internet Technology */
+
+}
+
+span.s_131 { /* subject BLS 3214 Automation of Records Management Systems */
+
+}
+
+span.s_132 { /* subject BRM 3101 Project Planning and Management */
+
+}
+
+span.s_133 { /* subject BRM 3102 Management of Business Records  */
+
+}
+
+span.s_134 { /* subject BRM 3103 Preservation */
+
+}
+
+span.s_135 { /* subject DRA 2101 Basic Archives Management  */
+
+}
+
+span.s_136 { /* subject DRA 2102 Introduction to Management of Museum Collection */
+
+}
+
+span.s_137 { /* subject DRA 2103 Oral History and Paleography */
+
+}
+
+span.s_138 { /* subject DRA 2104 Basic Financial Management */
+
+}
+
+span.s_139 { /* subject MSC 7101 Research Methods */
+
+}
+
+span.s_140 { /* subject MSC 7105 Information, Gender and Society */
+
+}
+
+span.s_141 { /* subject MSC 7106 Knowledge Organisation and Management */
+
+}
+
+span.s_142 { /* subject MSC 7107 Information Technology For Library and Information Services */
+
+}
+
+span.s_143 { /* subject MSC 7108 Information Systems Analysis  */
+
+}
+
+span.s_144 { /* subject MSC 8104 Bibliometrics   */
+
+}
+
+span.s_145 { /* subject MSC 8105 Knowledge Organisation (Classification and Cataloguing)  */
+
+}
+
+span.s_146 { /* subject MSC 8106 Publishing Management and Editing */
+
+}
+
+span.s_147 { /* subject MSC 8107 Multimedia Production  */
+
+}
+
+span.s_148 { /* subject MSC 8108 Records and Archives Management */
+
+}
+
+span.s_149 { /* subject MSC 8109 Preservation and Conservation of Archives */
+
+}
+
+span.s_150 { /* subject MSC 8110 Social Informatics  */
+
+}
+
+span.s_151 { /* subject MSC 8111 Indigenous Knowledge Management Systems */
+
+}
+
+span.s_152 { /* subject MSC 7109 Information Sources and Services */
+
+}
+
+span.s_153 { /* subject PLS 8103 Theory of Information Science */
+
+}
+
+span.s_154 { /* subject PLS 8105 Research Paradigms in Information Science */
+
+}
+
+span.s_155 { /* subject PLS 8106 Operational Research in Information Science */
+
+}
+
+span.s_156 { /* subject PLS 8107 Seminar */
+
+}
+
+span.ss_2 { /* students set BIT-1 */
+
+}
+
+span.ss_4 { /* students set CS-1 */
+
+}
+
+span.ss_6 { /* students set BIS-1 */
+
+}
+
+span.ss_8 { /* students set SE-1 */
+
+}
+
+span.ss_10 { /* students set BIT-EVE-1 */
+
+}
+
+span.ss_12 { /* students set CS-EVE-1 */
+
+}
+
+span.ss_14 { /* students set BIS-EVE-1 */
+
+}
+
+span.ss_16 { /* students set SE-EVE-1 */
+
+}
+
+span.ss_18 { /* students set BLIS-1 */
+
+}
+
+span.ss_20 { /* students set DLIS-EVE-1 */
+
+}
+
+span.ss_22 { /* students set BRAM-1 */
+
+}
+
+span.ss_24 { /* students set DRAM-1 */
+
+}
+
+span.ss_26 { /* students set EASLIS-PhD */
+
+}
+
+span.ss_28 { /* students set BRAM-EVE-1 */
+
+}
+
+span.ss_30 { /* students set BLIS-EVE-1 */
+
+}
+
+span.ss_32 { /* students set DRAM-EVE-1 */
+
+}
+
+span.ss_35 { /* students set CS-2 */
+
+}
+
+span.ss_37 { /* students set BIT-2 */
+
+}
+
+span.ss_38 { /* students set BIT-2-Elec1 */
+display:none;
+}
+
+span.ss_39 { /* students set BIT-2-Elec2 */
+display:none;
+}
+
+span.ss_40 { /* students set BIS-2 */
+
+}
+
+span.ss_41 { /* students set BIS-2-Elec1 */
+display:none;
+}
+
+span.ss_42 { /* students set BIS-2-Elec2 */
+display:none;
+}
+
+span.ss_43 { /* students set SE-2 */
+
+}
+
+span.ss_45 { /* students set CS-EVE-2 */
+
+}
+
+span.ss_47 { /* students set BIT-EVE-2 */
+
+}
+
+span.ss_48 { /* students set BIT-EVE-2-Elec1 */
+display:none;
+}
+
+span.ss_49 { /* students set BIT-EVE-2-Elec2 */
+display:none;
+}
+
+span.ss_50 { /* students set BIS-EVE-2 */
+
+}
+
+span.ss_51 { /* students set BIS-EVE-2-Elec1 */
+display:none;
+}
+
+span.ss_52 { /* students set BIS-EVE-2-Elec2 */
+display:none;
+}
+
+span.ss_53 { /* students set SE-EVE-2 */
+
+}
+
+span.ss_55 { /* students set Diploma-2 */
+
+}
+
+span.ss_57 { /* students set Diploma-EVE-2 */
+
+}
+
+span.ss_59 { /* students set BLIS-2 */
+
+}
+
+span.ss_61 { /* students set DLIS-EVE-2 */
+
+}
+
+span.ss_63 { /* students set BRAM-2 */
+
+}
+
+span.ss_65 { /* students set DRAM-2 */
+
+}
+
+span.ss_67 { /* students set BLIS-EVE-2 */
+
+}
+
+span.ss_69 { /* students set BRAM-EVE-2 */
+
+}
+
+span.ss_71 { /* students set DRAM-EVE-2 */
+
+}
+
+span.ss_74 { /* students set CS-3 */
+
+}
+
+span.ss_76 { /* students set BIT-3 */
+
+}
+
+span.ss_77 { /* students set BIT-3-Elec1 */
+display:none;
+}
+
+span.ss_78 { /* students set BIT-3-Elec2 */
+display:none;
+}
+
+span.ss_79 { /* students set BIS-3 */
+
+}
+
+span.ss_80 { /* students set BIS-3-Elec1 */
+display:none;
+}
+
+span.ss_81 { /* students set BIS-3-Elec2 */
+display:none;
+}
+
+span.ss_82 { /* students set SE-3 */
+
+}
+
+span.ss_83 { /* students set SE-3-Elec1 */
+display:none;
+}
+
+span.ss_84 { /* students set SE-3-Elec2 */
+display:none;
+}
+
+span.ss_85 { /* students set SE-3-Elec3 */
+display:none;
+}
+
+span.ss_86 { /* students set CS-EVE-3 */
+
+}
+
+span.ss_88 { /* students set BIT-EVE-3 */
+
+}
+
+span.ss_89 { /* students set BIT-EVE-3-Elec1 */
+display:none;
+}
+
+span.ss_90 { /* students set BIT-EVE-3-Elec2 */
+display:none;
+}
+
+span.ss_91 { /* students set BIS-EVE-3 */
+
+}
+
+span.ss_92 { /* students set BIS-EVE-3-Elec1 */
+display:none;
+}
+
+span.ss_93 { /* students set BIS-EVE-3-Elec2 */
+display:none;
+}
+
+span.ss_94 { /* students set SE-EVE-3 */
+
+}
+
+span.ss_95 { /* students set SE-EVE-3-Elec1 */
+display:none;
+}
+
+span.ss_96 { /* students set SE-EVE-3-Elec2 */
+display:none;
+}
+
+span.ss_97 { /* students set SE-EVE-3-Elec3 */
+display:none;
+}
+
+span.ss_98 { /* students set BLIS-3 */
+
+}
+
+span.ss_100 { /* students set BRAM-3 */
+
+}
+
+span.ss_102 { /* students set BLIS-EVE-3 */
+
+}
+
+span.ss_104 { /* students set BRAM-EVE-3 */
+
+}
+
+span.ss_107 { /* students set SE-4 */
+
+}
+
+span.ss_109 { /* students set SE-EVE-4 */
+
+}
+
+span.ss_112 { /* students set MCS-1 */
+display:none;
+}
+
+span.ss_113 { /* students set MCS-1-Elec1 */
+display:none;
+}
+
+span.ss_114 { /* students set MCS-1-Elec2 */
+display:none;
+}
+
+span.ss_115 { /* students set MIT-1 */
+display:none;
+}
+
+span.ss_117 { /* students set MIS-1 */
+display:none;
+}
+
+span.ss_119 { /* students set MDSE-1-option-CN */
+display:none;
+}
+
+span.ss_120 { /* students set MDSE-1-option-CN-Elec1 */
+display:none;
+}
+
+span.ss_121 { /* students set MDSE-1-option-CN-Elec2 */
+display:none;
+}
+
+span.ss_122 { /* students set MDSE-1-option-CN-Elec3 */
+display:none;
+}
+
+span.ss_123 { /* students set MDSE-1-option-MC */
+display:none;
+}
+
+span.ss_124 { /* students set MDSE-1-option-MC-Elec1 */
+display:none;
+}
+
+span.ss_125 { /* students set MDSE-1-option-MC-Elec2 */
+display:none;
+}
+
+span.ss_126 { /* students set MDSE-1-option-MC-Elec3 */
+display:none;
+}
+
+span.ss_127 { /* students set MDSE-1-option-MC-Elec4 */
+display:none;
+}
+
+span.ss_128 { /* students set MDSE-1-option-SE */
+display:none;
+}
+
+span.ss_129 { /* students set MDSE-1-option-SE-Elec1 */
+display:none;
+}
+
+span.ss_130 { /* students set MDSE-1-option-SE-Elec2 */
+display:none;
+}
+
+span.ss_131 { /* students set MDSE-1-option-SE-Elec3 */
+display:none;
+}
+
+span.ss_132 { /* students set MDSE-1-option-SE-Elec4 */
+display:none;
+}
+
+span.ss_133 { /* students set EASLIS-MSC-1 */
+display:none;
+}
+
+span.ss_136 { /* students set MCS-2 */
+display:none;
+}
+
+span.ss_138 { /* students set MIT-2-option-IM */
+display:none;
+}
+
+span.ss_139 { /* students set MIT-2-option-IM-Elec1 */
+display:none;
+}
+
+span.ss_140 { /* students set MIT-2-option-IM-Elec2 */
+display:none;
+}
+
+span.ss_141 { /* students set MIT-2-option-IM-Elec3 */
+display:none;
+}
+
+span.ss_142 { /* students set MIT-2-option-IW */
+display:none;
+}
+
+span.ss_143 { /* students set MIT-2-option-IW-Elec1 */
+display:none;
+}
+
+span.ss_144 { /* students set MIT-2-option-IW-Elec2 */
+display:none;
+}
+
+span.ss_145 { /* students set MIT-2-option-IW-Elec3 */
+display:none;
+}
+
+span.ss_146 { /* students set MIS-2-option-ISM */
+display:none;
+}
+
+span.ss_147 { /* students set MIS-2-option-ISM-Elec1 */
+display:none;
+}
+
+span.ss_148 { /* students set MIS-2-option-ISM-Elec2 */
+display:none;
+}
+
+span.ss_149 { /* students set MIS-2-option-IST */
+display:none;
+}
+
+span.ss_150 { /* students set MIS-2-option-IST-Elec1 */
+display:none;
+}
+
+span.ss_151 { /* students set MIS-2-option-IST-Elec2 */
+display:none;
+}
+
+span.ss_152 { /* students set MDSE-2-option-CN */
+display:none;
+}
+
+span.ss_153 { /* students set MDSE-2-option-CN-Elec1 */
+display:none;
+}
+
+span.ss_154 { /* students set MDSE-2-option-CN-Elec2 */
+display:none;
+}
+
+span.ss_155 { /* students set MDSE-2-option-CN-Elec3 */
+display:none;
+}
+
+span.ss_156 { /* students set MDSE-2-option-MC */
+display:none;
+}
+
+span.ss_157 { /* students set MDSE-2-option-MC-Elec1 */
+display:none;
+}
+
+span.ss_158 { /* students set MDSE-2-option-MC-Elec2 */
+display:none;
+}
+
+span.ss_159 { /* students set MDSE-2-option-MC-Elec3 */
+display:none;
+}
+
+span.ss_160 { /* students set MDSE-2-option-SE */
+display:none;
+}
+
+span.ss_161 { /* students set MDSE-2-option-SE-Elec1 */
+display:none;
+}
+
+span.ss_162 { /* students set MDSE-2-option-SE-Elec2 */
+display:none;
+}
+
+span.ss_163 { /* students set EASLIS-MSC-2 */
+display:none;
+}
+
+span.ss_164 { /* students set EASLIS-MSC-2-option1 */
+display:none;
+}
+
+span.ss_165 { /* students set EASLIS-MSC-2-option2 */
+display:none;
+}
+
+span.t_1 { /* teacher Agnes Nakakawa */
+
+}
+
+span.t_2 { /* teacher Agnes Rwashana */
+
+}
+
+span.t_3 { /* teacher Alice Mugisha */
+
+}
+
+span.t_4 { /* teacher Aminah Zawedde */
+
+}
+
+span.t_5 { /* teacher Andrew Gahwera */
+
+}
+
+span.t_6 { /* teacher Arthur Munanura */
+
+}
+
+span.t_7 { /* teacher Asaph Tweheyo */
+
+}
+
+span.t_8 { /* teacher Barbara Nansamba */
+
+}
+
+span.t_9 { /* teacher Benjamin Kanagwa */
+
+}
+
+span.t_10 { /* teacher Bernard Muwonge */
+
+}
+
+span.t_11 { /* teacher Bridget Magoba */
+
+}
+
+span.t_12 { /* teacher David Bamutura */
+
+}
+
+span.t_13 { /* teacher Davies Rwabu */
+
+}
+
+span.t_14 { /* teacher Diana Nakiyingi */
+
+}
+
+span.t_15 { /* teacher Diploma Teacher */
+
+}
+
+span.t_16 { /* teacher Doreen Tuheirwe-Mukasa */
+
+}
+
+span.t_17 { /* teacher Dragule Swaib */
+
+}
+
+span.t_18 { /* teacher Drake Mirembe */
+
+}
+
+span.t_19 { /* teacher Emily Bagarukayo */
+
+}
+
+span.t_20 { /* teacher Emma Mugejjera */
+
+}
+
+span.t_21 { /* teacher Emmanuel Eilu */
+
+}
+
+span.t_22 { /* teacher Emmanuel Lule */
+
+}
+
+span.t_23 { /* teacher Erik Urbach */
+
+}
+
+span.t_24 { /* teacher Esther Namirembe */
+
+}
+
+span.t_25 { /* teacher Fiona Ssozi */
+
+}
+
+span.t_26 { /* teacher Flavia Namagembe */
+
+}
+
+span.t_27 { /* teacher Florence Tushabe */
+
+}
+
+span.t_28 { /* teacher Gilbert Maiga */
+
+}
+
+span.t_29 { /* teacher Grace Kamulegeya */
+
+}
+
+span.t_30 { /* teacher Grace Kobusinge */
+
+}
+
+span.t_31 { /* teacher Hasifa Namatovu */
+
+}
+
+span.t_32 { /* teacher Hawa Nyende */
+
+}
+
+span.t_33 { /* teacher Henry Serugunda */
+
+}
+
+span.t_34 { /* teacher Ibrahim Bbosa */
+
+}
+
+span.t_35 { /* teacher Immanuel Ezenne */
+
+}
+
+span.t_36 { /* teacher Innocent Ndibatya */
+
+}
+
+span.t_37 { /* teacher Irene Arinaitwe */
+
+}
+
+span.t_38 { /* teacher Irene Nakiyimba */
+
+}
+
+span.t_39 { /* teacher Jacob Katende */
+
+}
+
+span.t_40 { /* teacher Joab Agaba */
+
+}
+
+span.t_41 { /* teacher John Kizito */
+
+}
+
+span.t_42 { /* teacher John Quinn */
+
+}
+
+span.t_43 { /* teacher Johnson Mwebaze */
+
+}
+
+span.t_44 { /* teacher Joseph Balikuddembe */
+
+}
+
+span.t_45 { /* teacher Joseph Matovu */
+
+}
+
+span.t_46 { /* teacher Joseph Mugisha */
+
+}
+
+span.t_47 { /* teacher Joseph Ssemwogerere */
+
+}
+
+span.t_48 { /* teacher Josephine Nabukenya */
+
+}
+
+span.t_49 { /* teacher Julianne Sansa-Otim */
+
+}
+
+span.t_50 { /* teacher Justus Karegyeya */
+
+}
+
+span.t_51 { /* teacher Lydia C. Nalule */
+
+}
+
+span.t_52 { /* teacher Margaret Nagwonvuma */
+
+}
+
+span.t_53 { /* teacher Marriette Katarahweire */
+
+}
+
+span.t_54 { /* teacher Martin Ngobye */
+
+}
+
+span.t_55 { /* teacher Mary Komunte */
+
+}
+
+span.t_56 { /* teacher Mary Nsabagwa */
+
+}
+
+span.t_57 { /* teacher Mary Nsabagwa/Joab Agaba */
+
+}
+
+span.t_58 { /* teacher Matsiko Eliab */
+
+}
+
+span.t_59 { /* teacher Maureen Nyonyintono */
+
+}
+
+span.t_60 { /* teacher May Namuddu */
+
+}
+
+span.t_61 { /* teacher Mercy Amiyo */
+
+}
+
+span.t_62 { /* teacher Michael Kizito */
+
+}
+
+span.t_63 { /* teacher Moses Ntanda */
+
+}
+
+span.t_64 { /* teacher Nasser Kimbugwe */
+
+}
+
+span.t_65 { /* teacher Paddy Asiimwe */
+
+}
+
+span.t_66 { /* teacher Patricia Nyangoma */
+
+}
+
+span.t_67 { /* teacher Patrick Muinda */
+
+}
+
+span.t_68 { /* teacher Patrick Ogao */
+
+}
+
+span.t_69 { /* teacher Paul Bakaki */
+
+}
+
+span.t_70 { /* teacher Paul Katongole */
+
+}
+
+span.t_71 { /* teacher Paul Ssemaluulu */
+
+}
+
+span.t_72 { /* teacher Peter Nabende */
+
+}
+
+span.t_73 { /* teacher Peter Wakholi */
+
+}
+
+span.t_74 { /* teacher Rashidah Namisanvu */
+
+}
+
+span.t_75 { /* teacher Rebecca Asiimwe */
+
+}
+
+span.t_76 { /* teacher Richard Mayanja */
+
+}
+
+span.t_77 { /* teacher Richard Ssekibuule */
+
+}
+
+span.t_78 { /* teacher Ronald Mayambala */
+
+}
+
+span.t_79 { /* teacher Rose Nakibuule */
+
+}
+
+span.t_80 { /* teacher Safari Yonasi */
+
+}
+
+span.t_81 { /* teacher Samuel Mugabi */
+
+}
+
+span.t_82 { /* teacher Steven Odongo */
+
+}
+
+span.t_83 { /* teacher Tonny Bulega */
+
+}
+
+span.t_84 { /* teacher IS Teacher */
+
+}
+
+span.t_85 { /* teacher John Ngubiri */
+
+}
+
+span.t_86 { /* teacher NINA */
+
+}
+
+span.t_87 { /* teacher KULISOOMA */
+
+}
+
+span.t_88 { /* teacher SSEKITTO */
+
+}
+
+span.t_89 { /* teacher KADDU */
+
+}
+
+span.t_90 { /* teacher MUZAKI  */
+
+}
+
+span.t_91 { /* teacher MUTIBWA */
+
+}
+
+span.t_92 { /* teacher AZIYO */
+
+}
+
+span.t_93 { /* teacher KIDAAGA */
+
+}
+
+span.t_94 { /* teacher KHAN */
+
+}
+
+span.t_95 { /* teacher EKWARO */
+
+}
+
+span.t_96 { /* teacher KIGONGO-BUKENYA */
+
+}
+
+span.t_97 { /* teacher NAMUJUZI */
+
+}
+
+span.t_98 { /* teacher BUKIRWA */
+
+}
+
+span.t_99 { /* teacher SENDIKADIWA */
+
+}
+
+span.t_100 { /* teacher KIYINGI */
+
+}
+
+span.t_101 { /* teacher MAGARA */
+
+}
+
+span.t_102 { /* teacher ABIDI */
+
+}
+
+span.t_103 { /* teacher LUYOMBYA */
+
+}
+
+span.t_104 { /* teacher KAYIKI */
+
+}
+
+span.t_105 { /* teacher KAWALYA */
+
+}
+
+span.t_106 { /* teacher BYAMUGISHA */
+
+}
+
+span.t_107 { /* teacher NALUMAGA */
+
+}
+
+span.t_108 { /* teacher BAKAKI */
+
+}
+
+span.t_109 { /* teacher OKELLO-OBURA */
+
+}
+
+span.t_110 { /* teacher KIBANJA */
+
+}
+
+span.t_111 { /* teacher NGUBIRI */
+
+}
+
+span.r_1 { /* room LLT 1A */
+
+}
+
+span.r_2 { /* room LLT 1B */
+
+}
+
+span.r_3 { /* room LLT 2A */
+
+}
+
+span.r_4 { /* room LLT 2B */
+
+}
+
+span.r_5 { /* room LLT 3A */
+
+}
+
+span.r_6 { /* room LLT 3B */
+
+}
+
+span.r_7 { /* room LLT 4A */
+
+}
+
+span.r_8 { /* room LLT 4B */
+
+}
+
+span.r_9 { /* room LLT 5A */
+
+}
+
+span.r_10 { /* room LLT 5B */
+
+}
+
+span.r_11 { /* room LLT 6A */
+
+}
+
+span.r_12 { /* room LLT 6B */
+
+}
+
+span.r_13 { /* room LLT 6C */
+
+}
+
+span.r_14 { /* room LLT 2C */
+
+}
+
+span.r_15 { /* room GIS Lab */
+
+}
+
+span.r_16 { /* room Networking Lab */
+
+}
+
+span.r_17 { /* room Mobile Computing Lab */
+
+}
+
+span.r_18 { /* room CIT Conference Room */
+
+}
+
+span.r_19 { /* room LT 6D */
+
+}
+
+span.r_20 { /* room BIG Lab 2 */
+
+}
+
+span.r_21 { /* room Lab 2B */
+
+}
+
+span.r_22 { /* room EASLIS-LT 1 */
+
+}
+
+span.r_23 { /* room EASLIS-LT 2 */
+
+}
+
+span.r_24 { /* room EASLIS-LT 4 */
+
+}
+
+span.r_25 { /* room EASLIS-Seminar Room */
+
+}
+
+span.subject {
+
+}
+
+span.activitytag {
+
+}
+
+span.empty {
+  color: gray;
+}
+
+td.empty {
+  border-color:silver;
+  border-right-style:none;
+  border-bottom-style:none;
+  border-left-style:dotted;
+  border-top-style:dotted;
+}
+
+span.notAvailable {
+  color: gray;
+}
+
+td.notAvailable {
+  border-color:silver;
+  border-right-style:none;
+  border-bottom-style:none;
+  border-left-style:dotted;
+  border-top-style:dotted;
+}
+
+span.break {
+  color: gray;
+}
+
+td.break {
+  border-color:silver;
+  border-right-style:none;
+  border-bottom-style:none;
+  border-left-style:dotted;
+  border-top-style:dotted;
+}
+
+td.student, div.student {
+
+}
+
+td.teacher, div.teacher {
+
+}
+
+td.room, div.room {
+
+}
+
+tr.line0 {
+  font-size: smaller;
+}
+
+tr.line1, div.line1 {
+
+}
+
+tr.line2, div.line2 {
+  font-size: smaller;
+  color: gray;
+}
+
+tr.line3, div.line3 {
+  font-size: smaller;
+  color: silver;
+}
+
+
+/* Be careful. You might get mutual and ambiguous styles. CSS means that the last definition will be used. */
+
+td.s_1 { /* subject BIS 1100 Foundations of IS */
+
+}
+
+td.s_2 { /* subject BIS 1101 Communication for IS Managers */
+
+}
+
+td.s_3 { /* subject BIS 1102 Business Statistics */
+
+}
+
+td.s_4 { /* subject BIS 1103 Systems Analysis and Design */
+
+}
+
+td.s_5 { /* subject BIS 2100 Information System Security */
+
+}
+
+td.s_6 { /* subject BIS 2101 Information System Development */
+
+}
+
+td.s_7 { /* subject BIS 2102 Information System Management */
+
+}
+
+td.s_8 { /* subject BIS 2103 Knowledge-based Systems */
+
+}
+
+td.s_9 { /* subject BIS 2104 Introduction to Database Systems */
+
+}
+
+td.s_10 { /* subject BIS 3100 Modeling and Simulation */
+
+}
+
+td.s_11 { /* subject BIS 3102 Human Computer Interaction */
+
+}
+
+td.s_12 { /* subject BIS 3103 Database Management Systems */
+
+}
+
+td.s_13 { /* subject BIS 3103 Database Management Systems - Retakers */
+
+}
+
+td.s_14 { /* subject BIT 1102 Communications Technology & the Internet */
+
+}
+
+td.s_15 { /* subject BIT 1104 Introduction to Information Technology   */
+
+}
+
+td.s_16 { /* subject BIT 2105 Electronic Media Systems & Multimedia */
+
+}
+
+td.s_17 { /* subject BIT 2107 Web Systems and Technologies I */
+
+}
+
+td.s_18 { /* subject BIT 2108 Information Technology II */
+
+}
+
+td.s_19 { /* subject BIT 2109 Integrative Programming and Technologies */
+
+}
+
+td.s_20 { /* subject BIT 2110 Electronic Commerce */
+
+}
+
+td.s_21 { /* subject BIT 3104 Business Communication & Report Writing */
+
+}
+
+td.s_22 { /* subject BIT 3105 Web Systems and Technologies II */
+
+}
+
+td.s_23 { /* subject BIT 3106 Software Engineering for Internet Applications */
+
+}
+
+td.s_24 { /* subject BIT 3107 IT Projects Management & Development */
+
+}
+
+td.s_25 { /* subject BSE 1105 Business Law */
+
+}
+
+td.s_26 { /* subject BSE 2102 Principles of Software Development II */
+
+}
+
+td.s_27 { /* subject BSE 2105 Formal Methods */
+
+}
+
+td.s_28 { /* subject BSE 3102 Object-oriented Software Engineering  */
+
+}
+
+td.s_29 { /* subject BSE 3103 Requirements Engineering  */
+
+}
+
+td.s_30 { /* subject BSE 3104 Software metrics  */
+
+}
+
+td.s_31 { /* subject BSE 3105 Software Evolution  */
+
+}
+
+td.s_32 { /* subject BSE 3106 Mobile Networks and Computing  */
+
+}
+
+td.s_33 { /* subject BSE 3107 Real-Time and Embedded Systems */
+
+}
+
+td.s_34 { /* subject BSE 4100 Software Engineering Project I */
+
+}
+
+td.s_35 { /* subject BSE 4101 Software Reliability and Testing */
+
+}
+
+td.s_36 { /* subject BSE 4102 Ethics of Professional Engineers */
+
+}
+
+td.s_37 { /* subject COE 2105 Entrepreneurship */
+
+}
+
+td.s_38 { /* subject CSC 1100 Computer Literacy */
+
+}
+
+td.s_39 { /* subject CSC 1104 Computer Organization & Architecture */
+
+}
+
+td.s_40 { /* subject CSC 1106 Programming Methodology I */
+
+}
+
+td.s_41 { /* subject CSC 2100 Data Structures and Algorithms */
+
+}
+
+td.s_42 { /* subject CSC 2113 Software Engineering */
+
+}
+
+td.s_43 { /* subject CSC 2113 Software Engineering - Retakers */
+
+}
+
+td.s_44 { /* subject CSC 2114 Artificial Intelligence */
+
+}
+
+td.s_45 { /* subject CSC 2115 Programming Methodology II */
+
+}
+
+td.s_46 { /* subject CSC 3103 User Interface Design */
+
+}
+
+td.s_47 { /* subject CSC 3105 Computer Graphics */
+
+}
+
+td.s_48 { /* subject CSC 3112 Principles of Programming Languages  */
+
+}
+
+td.s_49 { /* subject CSC 3113 Emerging trends in computer science  */
+
+}
+
+td.s_50 { /* subject CSC 3114 Selected Topics in CS */
+
+}
+
+td.s_51 { /* subject CSK 1101 Communication Skills */
+
+}
+
+td.s_52 { /* subject DCS 2103 Ethics in an IT Environment */
+
+}
+
+td.s_53 { /* subject MCN 7100 Computer Networks */
+
+}
+
+td.s_54 { /* subject MCN 7101 Principles of Mobile Computing */
+
+}
+
+td.s_55 { /* subject MCN 7102 Software Engineering */
+
+}
+
+td.s_56 { /* subject MCN 7103 System and Network Security */
+
+}
+
+td.s_57 { /* subject MCN 7104 Mobile Communications */
+
+}
+
+td.s_58 { /* subject MCN 7105 Structure and Interpretation of Computer Programs */
+
+}
+
+td.s_59 { /* subject MCN 7106 Mobile Software and Content Development  */
+
+}
+
+td.s_60 { /* subject MCN 7107 Communications Systems */
+
+}
+
+td.s_61 { /* subject MCN 7109 Requirements Engineering */
+
+}
+
+td.s_62 { /* subject MCN 8100 Advanced Network Security */
+
+}
+
+td.s_63 { /* subject MCN 8101 Innovative Mobile Services */
+
+}
+
+td.s_64 { /* subject MCN 8102 Telecommunications Policy and Standards */
+
+}
+
+td.s_65 { /* subject MCN 8103 Multimedia Communication Systems */
+
+}
+
+td.s_66 { /* subject MCN 8104 Networking Programming */
+
+}
+
+td.s_67 { /* subject MCN 8105 Applied Software Project Management */
+
+}
+
+td.s_68 { /* subject MCN 8106 Database Design */
+
+}
+
+td.s_69 { /* subject MCN 8107 Selected Topics in Networking */
+
+}
+
+td.s_70 { /* subject MCN 8108 Software Quality Assurance and Testing */
+
+}
+
+td.s_71 { /* subject MCS 7116 Graph Theory */
+
+}
+
+td.s_72 { /* subject MCS 7118 Advanced Programming */
+
+}
+
+td.s_73 { /* subject MCS 8100 Artificial Intelligence */
+
+}
+
+td.s_74 { /* subject MCS 8103 Operating Systems Theory and Design */
+
+}
+
+td.s_75 { /* subject MIS 7100 Systems Analysis and Design */
+
+}
+
+td.s_76 { /* subject MIS 7102 Modelling and Simulation */
+
+}
+
+td.s_77 { /* subject MIS 7110 Database Systems */
+
+}
+
+td.s_78 { /* subject MIS 7111 Information Systems for Managers */
+
+}
+
+td.s_79 { /* subject MIS 8108 Business Intelligence and Data Mining */
+
+}
+
+td.s_80 { /* subject MIS 8110 GIS and Remote Sensing  */
+
+}
+
+td.s_81 { /* subject MIS 8115 Information Systems Security  */
+
+}
+
+td.s_82 { /* subject MIS 8116 Enterprise Integration & Collaborative Comms. */
+
+}
+
+td.s_83 { /* subject MIS 8117 Business Process Modelling & Analysis */
+
+}
+
+td.s_84 { /* subject MIT 7100 Information Security */
+
+}
+
+td.s_85 { /* subject MIT 7115 Contemporary Issues in Information Technology */
+
+}
+
+td.s_86 { /* subject MIT 7116 Research Methodology */
+
+}
+
+td.s_87 { /* subject MIT 8104 Online Information Services */
+
+}
+
+td.s_88 { /* subject MIT 8110 Computer Security/ MIS 8115 Information Systems Security */
+
+}
+
+td.s_89 { /* subject MIT 8115 Corporate Network Management */
+
+}
+
+td.s_90 { /* subject MIT 8116 Multimedia and Emerging Technologies */
+
+}
+
+td.s_91 { /* subject MIT 8117 XML and Web Services */
+
+}
+
+td.s_92 { /* subject MIT 8118 Web based IS and Web Mining Technology */
+
+}
+
+td.s_93 { /* subject MTH 2106 Numerical Analysis I */
+
+}
+
+td.s_94 { /* subject MTH 3105 Discrete Mathematics */
+
+}
+
+td.s_95 { /* subject MTH 3107 Linear programming  */
+
+}
+
+td.s_96 { /* subject BLS 1106 Information Literacy */
+
+}
+
+td.s_97 { /* subject BLS 1111 Information Technology 1 */
+
+}
+
+td.s_98 { /* subject BLS 1105 Information and Society  */
+
+}
+
+td.s_99 { /* subject BLS 3120 Library Operations */
+
+}
+
+td.s_100 { /* subject BLS 2106 Reference and Information Service */
+
+}
+
+td.s_101 { /* subject BLS 2107 Editing  */
+
+}
+
+td.s_102 { /* subject BLS 2112 Document Cataloguing I  */
+
+}
+
+td.s_103 { /* subject BLS 2113 Document Classification I  */
+
+}
+
+td.s_104 { /* subject BLS 1213 Analysis of Information Systems */
+
+}
+
+td.s_105 { /* subject BLS 3113 Management of Information Institutions and Resources */
+
+}
+
+td.s_106 { /* subject BLS 3116 Preservation and Conservation */
+
+}
+
+td.s_107 { /* subject BLS 3122 Web Document  Management */
+
+}
+
+td.s_108 { /* subject BLS 3124 Multimedia Librarianship  */
+
+}
+
+td.s_109 { /* subject BLS 3124 Research Methods */
+
+}
+
+td.s_110 { /* subject BLS 3125 Automation of Library and Information Systems */
+
+}
+
+td.s_111 { /* subject DLS 1101 Libraries in their Social Setting */
+
+}
+
+td.s_112 { /* subject DLS 1102 Introduction to Cataloguing Theory & Practice */
+
+}
+
+td.s_113 { /* subject DLS 1104 Basic Accounts  */
+
+}
+
+td.s_114 { /* subject DLS 1103 Introduction to Classification Theory & Practice */
+
+}
+
+td.s_115 { /* subject DLS 2101 Introduction to Community Information Services */
+
+}
+
+td.s_116 { /* subject DLS 2102 Specialized Information Services  */
+
+}
+
+td.s_117 { /* subject DLS 2103 School Library Studies */
+
+}
+
+td.s_118 { /* subject DLS 2108 Stores and Material Management  */
+
+}
+
+td.s_119 { /* subject BRM 1101 Principles of Records and Archives Management */
+
+}
+
+td.s_120 { /* subject BRM 1102 Organisation and Office Systems */
+
+}
+
+td.s_121 { /* subject BRM 1103 Paleography and Oral History Management */
+
+}
+
+td.s_122 { /* subject BRM 1104 Supplies and Materials Management */
+
+}
+
+td.s_123 { /* subject BLS 1112 Communication Skills and Practice */
+
+}
+
+td.s_124 { /* subject BLS 2215 Database Management Systems */
+
+}
+
+td.s_125 { /* subject BRM 2101 Information and Documentation Services  */
+
+}
+
+td.s_126 { /* subject BRM 2102 Ethics in Records and Archives Management  */
+
+}
+
+td.s_127 { /* subject BRM 2103 Records Processing and Organization */
+
+}
+
+td.s_128 { /* subject BRM 2104 Desktop Publishing and Editing */
+
+}
+
+td.s_129 { /* subject BRM 2105 Research Methods */
+
+}
+
+td.s_130 { /* subject BLS 3121 Website Development and Internet Technology */
+
+}
+
+td.s_131 { /* subject BLS 3214 Automation of Records Management Systems */
+
+}
+
+td.s_132 { /* subject BRM 3101 Project Planning and Management */
+
+}
+
+td.s_133 { /* subject BRM 3102 Management of Business Records  */
+
+}
+
+td.s_134 { /* subject BRM 3103 Preservation */
+
+}
+
+td.s_135 { /* subject DRA 2101 Basic Archives Management  */
+
+}
+
+td.s_136 { /* subject DRA 2102 Introduction to Management of Museum Collection */
+
+}
+
+td.s_137 { /* subject DRA 2103 Oral History and Paleography */
+
+}
+
+td.s_138 { /* subject DRA 2104 Basic Financial Management */
+
+}
+
+td.s_139 { /* subject MSC 7101 Research Methods */
+
+}
+
+td.s_140 { /* subject MSC 7105 Information, Gender and Society */
+
+}
+
+td.s_141 { /* subject MSC 7106 Knowledge Organisation and Management */
+
+}
+
+td.s_142 { /* subject MSC 7107 Information Technology For Library and Information Services */
+
+}
+
+td.s_143 { /* subject MSC 7108 Information Systems Analysis  */
+
+}
+
+td.s_144 { /* subject MSC 8104 Bibliometrics   */
+
+}
+
+td.s_145 { /* subject MSC 8105 Knowledge Organisation (Classification and Cataloguing)  */
+
+}
+
+td.s_146 { /* subject MSC 8106 Publishing Management and Editing */
+
+}
+
+td.s_147 { /* subject MSC 8107 Multimedia Production  */
+
+}
+
+td.s_148 { /* subject MSC 8108 Records and Archives Management */
+
+}
+
+td.s_149 { /* subject MSC 8109 Preservation and Conservation of Archives */
+
+}
+
+td.s_150 { /* subject MSC 8110 Social Informatics  */
+
+}
+
+td.s_151 { /* subject MSC 8111 Indigenous Knowledge Management Systems */
+
+}
+
+td.s_152 { /* subject MSC 7109 Information Sources and Services */
+
+}
+
+td.s_153 { /* subject PLS 8103 Theory of Information Science */
+
+}
+
+td.s_154 { /* subject PLS 8105 Research Paradigms in Information Science */
+
+}
+
+td.s_155 { /* subject PLS 8106 Operational Research in Information Science */
+
+}
+
+td.s_156 { /* subject PLS 8107 Seminar */
+
+}
+
+td.ss_2 { /* students set BIT-1 */
+
+}
+
+td.ss_4 { /* students set CS-1 */
+
+}
+
+td.ss_6 { /* students set BIS-1 */
+
+}
+
+td.ss_8 { /* students set SE-1 */
+
+}
+
+td.ss_10 { /* students set BIT-EVE-1 */
+
+}
+
+td.ss_12 { /* students set CS-EVE-1 */
+
+}
+
+td.ss_14 { /* students set BIS-EVE-1 */
+
+}
+
+td.ss_16 { /* students set SE-EVE-1 */
+
+}
+
+td.ss_18 { /* students set BLIS-1 */
+
+}
+
+td.ss_20 { /* students set DLIS-EVE-1 */
+
+}
+
+td.ss_22 { /* students set BRAM-1 */
+
+}
+
+td.ss_24 { /* students set DRAM-1 */
+
+}
+
+td.ss_26 { /* students set EASLIS-PhD */
+
+}
+
+td.ss_28 { /* students set BRAM-EVE-1 */
+
+}
+
+td.ss_30 { /* students set BLIS-EVE-1 */
+
+}
+
+td.ss_32 { /* students set DRAM-EVE-1 */
+
+}
+
+td.ss_35 { /* students set CS-2 */
+
+}
+
+td.ss_37 { /* students set BIT-2 */
+
+}
+
+td.ss_38 { /* students set BIT-2-Elec1 */
+
+}
+
+td.ss_39 { /* students set BIT-2-Elec2 */
+
+}
+
+td.ss_40 { /* students set BIS-2 */
+
+}
+
+td.ss_41 { /* students set BIS-2-Elec1 */
+
+}
+
+td.ss_42 { /* students set BIS-2-Elec2 */
+
+}
+
+td.ss_43 { /* students set SE-2 */
+
+}
+
+td.ss_45 { /* students set CS-EVE-2 */
+
+}
+
+td.ss_47 { /* students set BIT-EVE-2 */
+
+}
+
+td.ss_48 { /* students set BIT-EVE-2-Elec1 */
+
+}
+
+td.ss_49 { /* students set BIT-EVE-2-Elec2 */
+
+}
+
+td.ss_50 { /* students set BIS-EVE-2 */
+
+}
+
+td.ss_51 { /* students set BIS-EVE-2-Elec1 */
+
+}
+
+td.ss_52 { /* students set BIS-EVE-2-Elec2 */
+
+}
+
+td.ss_53 { /* students set SE-EVE-2 */
+
+}
+
+td.ss_55 { /* students set Diploma-2 */
+
+}
+
+td.ss_57 { /* students set Diploma-EVE-2 */
+
+}
+
+td.ss_59 { /* students set BLIS-2 */
+
+}
+
+td.ss_61 { /* students set DLIS-EVE-2 */
+
+}
+
+td.ss_63 { /* students set BRAM-2 */
+
+}
+
+td.ss_65 { /* students set DRAM-2 */
+
+}
+
+td.ss_67 { /* students set BLIS-EVE-2 */
+
+}
+
+td.ss_69 { /* students set BRAM-EVE-2 */
+
+}
+
+td.ss_71 { /* students set DRAM-EVE-2 */
+
+}
+
+td.ss_74 { /* students set CS-3 */
+
+}
+
+td.ss_76 { /* students set BIT-3 */
+
+}
+
+td.ss_77 { /* students set BIT-3-Elec1 */
+
+}
+
+td.ss_78 { /* students set BIT-3-Elec2 */
+
+}
+
+td.ss_79 { /* students set BIS-3 */
+
+}
+
+td.ss_80 { /* students set BIS-3-Elec1 */
+
+}
+
+td.ss_81 { /* students set BIS-3-Elec2 */
+
+}
+
+td.ss_82 { /* students set SE-3 */
+
+}
+
+td.ss_83 { /* students set SE-3-Elec1 */
+
+}
+
+td.ss_84 { /* students set SE-3-Elec2 */
+
+}
+
+td.ss_85 { /* students set SE-3-Elec3 */
+
+}
+
+td.ss_86 { /* students set CS-EVE-3 */
+
+}
+
+td.ss_88 { /* students set BIT-EVE-3 */
+
+}
+
+td.ss_89 { /* students set BIT-EVE-3-Elec1 */
+
+}
+
+td.ss_90 { /* students set BIT-EVE-3-Elec2 */
+
+}
+
+td.ss_91 { /* students set BIS-EVE-3 */
+
+}
+
+td.ss_92 { /* students set BIS-EVE-3-Elec1 */
+
+}
+
+td.ss_93 { /* students set BIS-EVE-3-Elec2 */
+
+}
+
+td.ss_94 { /* students set SE-EVE-3 */
+
+}
+
+td.ss_95 { /* students set SE-EVE-3-Elec1 */
+
+}
+
+td.ss_96 { /* students set SE-EVE-3-Elec2 */
+
+}
+
+td.ss_97 { /* students set SE-EVE-3-Elec3 */
+
+}
+
+td.ss_98 { /* students set BLIS-3 */
+
+}
+
+td.ss_100 { /* students set BRAM-3 */
+
+}
+
+td.ss_102 { /* students set BLIS-EVE-3 */
+
+}
+
+td.ss_104 { /* students set BRAM-EVE-3 */
+
+}
+
+td.ss_107 { /* students set SE-4 */
+
+}
+
+td.ss_109 { /* students set SE-EVE-4 */
+
+}
+
+td.ss_112 { /* students set MCS-1 */
+
+}
+
+td.ss_113 { /* students set MCS-1-Elec1 */
+
+}
+
+td.ss_114 { /* students set MCS-1-Elec2 */
+
+}
+
+td.ss_115 { /* students set MIT-1 */
+
+}
+
+td.ss_117 { /* students set MIS-1 */
+
+}
+
+td.ss_119 { /* students set MDSE-1-option-CN */
+
+}
+
+td.ss_120 { /* students set MDSE-1-option-CN-Elec1 */
+
+}
+
+td.ss_121 { /* students set MDSE-1-option-CN-Elec2 */
+
+}
+
+td.ss_122 { /* students set MDSE-1-option-CN-Elec3 */
+
+}
+
+td.ss_123 { /* students set MDSE-1-option-MC */
+
+}
+
+td.ss_124 { /* students set MDSE-1-option-MC-Elec1 */
+
+}
+
+td.ss_125 { /* students set MDSE-1-option-MC-Elec2 */
+
+}
+
+td.ss_126 { /* students set MDSE-1-option-MC-Elec3 */
+
+}
+
+td.ss_127 { /* students set MDSE-1-option-MC-Elec4 */
+
+}
+
+td.ss_128 { /* students set MDSE-1-option-SE */
+
+}
+
+td.ss_129 { /* students set MDSE-1-option-SE-Elec1 */
+
+}
+
+td.ss_130 { /* students set MDSE-1-option-SE-Elec2 */
+
+}
+
+td.ss_131 { /* students set MDSE-1-option-SE-Elec3 */
+
+}
+
+td.ss_132 { /* students set MDSE-1-option-SE-Elec4 */
+
+}
+
+td.ss_133 { /* students set EASLIS-MSC-1 */
+
+}
+
+td.ss_136 { /* students set MCS-2 */
+
+}
+
+td.ss_138 { /* students set MIT-2-option-IM */
+
+}
+
+td.ss_139 { /* students set MIT-2-option-IM-Elec1 */
+
+}
+
+td.ss_140 { /* students set MIT-2-option-IM-Elec2 */
+
+}
+
+td.ss_141 { /* students set MIT-2-option-IM-Elec3 */
+
+}
+
+td.ss_142 { /* students set MIT-2-option-IW */
+
+}
+
+td.ss_143 { /* students set MIT-2-option-IW-Elec1 */
+
+}
+
+td.ss_144 { /* students set MIT-2-option-IW-Elec2 */
+
+}
+
+td.ss_145 { /* students set MIT-2-option-IW-Elec3 */
+
+}
+
+td.ss_146 { /* students set MIS-2-option-ISM */
+
+}
+
+td.ss_147 { /* students set MIS-2-option-ISM-Elec1 */
+
+}
+
+td.ss_148 { /* students set MIS-2-option-ISM-Elec2 */
+
+}
+
+td.ss_149 { /* students set MIS-2-option-IST */
+
+}
+
+td.ss_150 { /* students set MIS-2-option-IST-Elec1 */
+
+}
+
+td.ss_151 { /* students set MIS-2-option-IST-Elec2 */
+
+}
+
+td.ss_152 { /* students set MDSE-2-option-CN */
+
+}
+
+td.ss_153 { /* students set MDSE-2-option-CN-Elec1 */
+
+}
+
+td.ss_154 { /* students set MDSE-2-option-CN-Elec2 */
+
+}
+
+td.ss_155 { /* students set MDSE-2-option-CN-Elec3 */
+
+}
+
+td.ss_156 { /* students set MDSE-2-option-MC */
+
+}
+
+td.ss_157 { /* students set MDSE-2-option-MC-Elec1 */
+
+}
+
+td.ss_158 { /* students set MDSE-2-option-MC-Elec2 */
+
+}
+
+td.ss_159 { /* students set MDSE-2-option-MC-Elec3 */
+
+}
+
+td.ss_160 { /* students set MDSE-2-option-SE */
+
+}
+
+td.ss_161 { /* students set MDSE-2-option-SE-Elec1 */
+
+}
+
+td.ss_162 { /* students set MDSE-2-option-SE-Elec2 */
+
+}
+
+td.ss_163 { /* students set EASLIS-MSC-2 */
+
+}
+
+td.ss_164 { /* students set EASLIS-MSC-2-option1 */
+
+}
+
+td.ss_165 { /* students set EASLIS-MSC-2-option2 */
+
+}
+
+td.t_1 { /* teacher Agnes Nakakawa */
+
+}
+
+td.t_2 { /* teacher Agnes Rwashana */
+
+}
+
+td.t_3 { /* teacher Alice Mugisha */
+
+}
+
+td.t_4 { /* teacher Aminah Zawedde */
+
+}
+
+td.t_5 { /* teacher Andrew Gahwera */
+
+}
+
+td.t_6 { /* teacher Arthur Munanura */
+
+}
+
+td.t_7 { /* teacher Asaph Tweheyo */
+
+}
+
+td.t_8 { /* teacher Barbara Nansamba */
+
+}
+
+td.t_9 { /* teacher Benjamin Kanagwa */
+
+}
+
+td.t_10 { /* teacher Bernard Muwonge */
+
+}
+
+td.t_11 { /* teacher Bridget Magoba */
+
+}
+
+td.t_12 { /* teacher David Bamutura */
+
+}
+
+td.t_13 { /* teacher Davies Rwabu */
+
+}
+
+td.t_14 { /* teacher Diana Nakiyingi */
+
+}
+
+td.t_15 { /* teacher Diploma Teacher */
+
+}
+
+td.t_16 { /* teacher Doreen Tuheirwe-Mukasa */
+
+}
+
+td.t_17 { /* teacher Dragule Swaib */
+
+}
+
+td.t_18 { /* teacher Drake Mirembe */
+
+}
+
+td.t_19 { /* teacher Emily Bagarukayo */
+
+}
+
+td.t_20 { /* teacher Emma Mugejjera */
+
+}
+
+td.t_21 { /* teacher Emmanuel Eilu */
+
+}
+
+td.t_22 { /* teacher Emmanuel Lule */
+
+}
+
+td.t_23 { /* teacher Erik Urbach */
+
+}
+
+td.t_24 { /* teacher Esther Namirembe */
+
+}
+
+td.t_25 { /* teacher Fiona Ssozi */
+
+}
+
+td.t_26 { /* teacher Flavia Namagembe */
+
+}
+
+td.t_27 { /* teacher Florence Tushabe */
+
+}
+
+td.t_28 { /* teacher Gilbert Maiga */
+
+}
+
+td.t_29 { /* teacher Grace Kamulegeya */
+
+}
+
+td.t_30 { /* teacher Grace Kobusinge */
+
+}
+
+td.t_31 { /* teacher Hasifa Namatovu */
+
+}
+
+td.t_32 { /* teacher Hawa Nyende */
+
+}
+
+td.t_33 { /* teacher Henry Serugunda */
+
+}
+
+td.t_34 { /* teacher Ibrahim Bbosa */
+
+}
+
+td.t_35 { /* teacher Immanuel Ezenne */
+
+}
+
+td.t_36 { /* teacher Innocent Ndibatya */
+
+}
+
+td.t_37 { /* teacher Irene Arinaitwe */
+
+}
+
+td.t_38 { /* teacher Irene Nakiyimba */
+
+}
+
+td.t_39 { /* teacher Jacob Katende */
+
+}
+
+td.t_40 { /* teacher Joab Agaba */
+
+}
+
+td.t_41 { /* teacher John Kizito */
+
+}
+
+td.t_42 { /* teacher John Quinn */
+
+}
+
+td.t_43 { /* teacher Johnson Mwebaze */
+
+}
+
+td.t_44 { /* teacher Joseph Balikuddembe */
+
+}
+
+td.t_45 { /* teacher Joseph Matovu */
+
+}
+
+td.t_46 { /* teacher Joseph Mugisha */
+
+}
+
+td.t_47 { /* teacher Joseph Ssemwogerere */
+
+}
+
+td.t_48 { /* teacher Josephine Nabukenya */
+
+}
+
+td.t_49 { /* teacher Julianne Sansa-Otim */
+
+}
+
+td.t_50 { /* teacher Justus Karegyeya */
+
+}
+
+td.t_51 { /* teacher Lydia C. Nalule */
+
+}
+
+td.t_52 { /* teacher Margaret Nagwonvuma */
+
+}
+
+td.t_53 { /* teacher Marriette Katarahweire */
+
+}
+
+td.t_54 { /* teacher Martin Ngobye */
+
+}
+
+td.t_55 { /* teacher Mary Komunte */
+
+}
+
+td.t_56 { /* teacher Mary Nsabagwa */
+
+}
+
+td.t_57 { /* teacher Mary Nsabagwa/Joab Agaba */
+
+}
+
+td.t_58 { /* teacher Matsiko Eliab */
+
+}
+
+td.t_59 { /* teacher Maureen Nyonyintono */
+
+}
+
+td.t_60 { /* teacher May Namuddu */
+
+}
+
+td.t_61 { /* teacher Mercy Amiyo */
+
+}
+
+td.t_62 { /* teacher Michael Kizito */
+
+}
+
+td.t_63 { /* teacher Moses Ntanda */
+
+}
+
+td.t_64 { /* teacher Nasser Kimbugwe */
+
+}
+
+td.t_65 { /* teacher Paddy Asiimwe */
+
+}
+
+td.t_66 { /* teacher Patricia Nyangoma */
+
+}
+
+td.t_67 { /* teacher Patrick Muinda */
+
+}
+
+td.t_68 { /* teacher Patrick Ogao */
+
+}
+
+td.t_69 { /* teacher Paul Bakaki */
+
+}
+
+td.t_70 { /* teacher Paul Katongole */
+
+}
+
+td.t_71 { /* teacher Paul Ssemaluulu */
+
+}
+
+td.t_72 { /* teacher Peter Nabende */
+
+}
+
+td.t_73 { /* teacher Peter Wakholi */
+
+}
+
+td.t_74 { /* teacher Rashidah Namisanvu */
+
+}
+
+td.t_75 { /* teacher Rebecca Asiimwe */
+
+}
+
+td.t_76 { /* teacher Richard Mayanja */
+
+}
+
+td.t_77 { /* teacher Richard Ssekibuule */
+
+}
+
+td.t_78 { /* teacher Ronald Mayambala */
+
+}
+
+td.t_79 { /* teacher Rose Nakibuule */
+
+}
+
+td.t_80 { /* teacher Safari Yonasi */
+
+}
+
+td.t_81 { /* teacher Samuel Mugabi */
+
+}
+
+td.t_82 { /* teacher Steven Odongo */
+
+}
+
+td.t_83 { /* teacher Tonny Bulega */
+
+}
+
+td.t_84 { /* teacher IS Teacher */
+
+}
+
+td.t_85 { /* teacher John Ngubiri */
+
+}
+
+td.t_86 { /* teacher NINA */
+
+}
+
+td.t_87 { /* teacher KULISOOMA */
+
+}
+
+td.t_88 { /* teacher SSEKITTO */
+
+}
+
+td.t_89 { /* teacher KADDU */
+
+}
+
+td.t_90 { /* teacher MUZAKI  */
+
+}
+
+td.t_91 { /* teacher MUTIBWA */
+
+}
+
+td.t_92 { /* teacher AZIYO */
+
+}
+
+td.t_93 { /* teacher KIDAAGA */
+
+}
+
+td.t_94 { /* teacher KHAN */
+
+}
+
+td.t_95 { /* teacher EKWARO */
+
+}
+
+td.t_96 { /* teacher KIGONGO-BUKENYA */
+
+}
+
+td.t_97 { /* teacher NAMUJUZI */
+
+}
+
+td.t_98 { /* teacher BUKIRWA */
+
+}
+
+td.t_99 { /* teacher SENDIKADIWA */
+
+}
+
+td.t_100 { /* teacher KIYINGI */
+
+}
+
+td.t_101 { /* teacher MAGARA */
+
+}
+
+td.t_102 { /* teacher ABIDI */
+
+}
+
+td.t_103 { /* teacher LUYOMBYA */
+
+}
+
+td.t_104 { /* teacher KAYIKI */
+
+}
+
+td.t_105 { /* teacher KAWALYA */
+
+}
+
+td.t_106 { /* teacher BYAMUGISHA */
+
+}
+
+td.t_107 { /* teacher NALUMAGA */
+
+}
+
+td.t_108 { /* teacher BAKAKI */
+
+}
+
+td.t_109 { /* teacher OKELLO-OBURA */
+
+}
+
+td.t_110 { /* teacher KIBANJA */
+
+}
+
+td.t_111 { /* teacher NGUBIRI */
+
+}
+
+/* Style the teachers free periods */
+
+div.DESCRIPTION {
+  text-align: left;
+  font-size: smaller;
+}
+
+div.TEACHER_HAS_SINGLE_GAP {
+  color: black;
+}
+
+div.TEACHER_HAS_BORDER_GAP {
+  color: gray;
+}
+
+div.TEACHER_HAS_BIG_GAP {
+  color: silver;
+}
+
+div.TEACHER_MUST_COME_EARLIER {
+  color: purple;
+}
+
+div.TEACHER_MUST_COME_MUCH_EARLIER {
+  font-size: smaller;
+  color: fuchsia;
+}
+
+div.TEACHER_MUST_STAY_LONGER {
+  color: teal;
+}
+
+div.TEACHER_MUST_STAY_MUCH_LONGER {
+  font-size: smaller;
+  color: aqua;
+}
+
+div.TEACHER_HAS_A_FREE_DAY {
+  font-size: smaller;
+  color: red;
+}
+
+div.TEACHER_IS_NOT_AVAILABLE {
+  font-size: smaller;
+  color: olive;
+}
+
+/* End of file. */
