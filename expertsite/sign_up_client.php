@@ -1,9 +1,7 @@
 <?php session_start();?>
 <?php include('includes/db_connection.php');
 	$conn=connect_to_db();
-
 require 'PHPMailer/PHPMailerAutoload.php';
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -347,10 +345,8 @@ require 'PHPMailer/PHPMailerAutoload.php';
 											$to      = $email; // Send email to our user
 											$subject = 'Signup | Verification'; // Give the email a subject
 											$message = '
-
 											Thanks for signing up!
 											Your account has been created, you can login with the following credentials after you have activated your account by pressing the url below.
-
 											------------------------
 											Please click this link to activate your account:
 											http://www.expertcage.com/verify.php?email='.$email.'&hash='.$hash_code.'
@@ -362,8 +358,7 @@ require 'PHPMailer/PHPMailerAutoload.php';
 //
 //											//echo "<div class='msg-thanks' align='center'><p>Special offer added successfully!.</p></div>";
 //											//header('Location: sign_uplogin');
-//											echo '<meta HTTP-EQUIV="REFRESH" content="0; url=thanks">';
-
+											echo '<meta HTTP-EQUIV="REFRESH" content="0; url=thanks">';
 										}
 								    }
 								}
@@ -502,10 +497,12 @@ require 'PHPMailer/PHPMailerAutoload.php';
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
         ga('create', 'UA-54039406-1', 'auto');
         ga('send', 'pageview');
     }
     </script>
 </body>
 </html>
+
+    
+
